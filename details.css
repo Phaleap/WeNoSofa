@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.heading {
+    width: 95%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+
+.heading a {
+    text-decoration: none;
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 50px;
+    color: black;
+}
+
+.cartBtn {
+    position: relative;
+    display: inline-block;
+}
+
+.cartBtn .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: rgb(157, 157, 157);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.details-container {
+    width: 95%;
+    max-width: 1400px;
+    background-color: white;
+    border: 1px solid #f9f0e6;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.details-container > button:first-child {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.details-container .image {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+.details-container .image img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.details-container .text {
+    flex: 1 1 40%;
+    max-width: 40%;
+    padding: 0 20px;
+}
+
+.text h1 {
+    padding-bottom: 20px;
+    font-family: "Instrument Serif", serif;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details-container .text h2 {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.details-container .text p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+.details-container .text h3 {
+    font-family: "Instrument Serif", serif;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+}
+
+.details-container .quantity {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-container .text label {
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+    padding-right: 15px;
+    color: #333;
+}
+
+.details-container .text input {
+    padding: 8px 10px;
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.details-container button {
+    padding: 12px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    width: auto;
+}
+
+.details-container #addToCart {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    width: 100%;
+    max-width: 300px;
+}
+
+.details-container #addToCart:hover {
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+.details-container button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.details-container button:not(#addToCart):hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        padding-bottom: 20px;
+    }
+
+    .heading a {
+        font-size: 40px;
+    }
+
+    .details-container {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .details-container .image {
+        max-height: 600px;
+    }
+
+    .details-container .text h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .details-container {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .details-container .text h2 {
+        font-size: 28px;
+    }
+
+    .details-container .text h3 {
+        font-size: 30px;
+    }
+
+    .details-container .text p {
+        font-size: 16px;
+    }
+
+    .details-container button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .heading {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .heading a {
+        font-size: 30px;
+    }
+
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .details-container > button:first-child {
+        position: static;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+
+    .details-container .image,
+    .details-container .text {
+        max-width: 100%;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .details-container .image img {
+        max-height: 400px;
+    }
+
+    .details-container .text {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .details-container .text h2 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .details-container .text h3 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .details-container .text p {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .details-container #addToCart {
+        max-width: 100%;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container {
+        padding: 10px;
+    }
+
+    .details-container .image img {
+        max-height: 300px;
+    }
+
+    .details-container .text h1 {
+        font-size: 16px;
+    }
+
+    .details-container .text label,
+    .details-container .text input {
+        font-size: 18px;
+    }
+
+    .details-container .text input {
+        width: 70px;
+    }
+}

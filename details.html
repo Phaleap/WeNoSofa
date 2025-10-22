@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="details.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Antic+Didone&family=Anton&family=BBH+Sans+Bartle&family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Bebas+Neue&family=Boldonse&family=Bungee+Tint&family=Cabin:ital,wght@0,400..700;1,400..700&family=Cal+Sans&family=Caprasimo&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Comfortaa:wght@300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Edu+QLD+Hand:wght@400..700&family=Gabarito:wght@400..900&family=Instrument+Serif:ital@0;1&family=Italiana&family=Italianno&family=Khmer&family=Martian+Mono:wght@100..800&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Old+Italic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart_checkout" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=shopping_cart_checkout" />
+</head>
+<body>
+ <div class="heading">
+  <a href="index.html">WENO</a>
+ <a href="addtocart.html" class="cartBtn">
+  <span style="font-size: 40px;" class="material-symbols-outlined">
+    shopping_cart_checkout
+  </span>
+  <span class="cart-count">0</span> 
+</a>
+</div>
+  <div class="details-container">
+    <button><a href="shop1.html">Back</a></button>
+    <div class="image">
+    <img id="product-image" src="" alt="Product image">
+    </div>
+    <div class="text">
+    <div class="name">
+      <h1>The product type</h1>
+      <h2 id="product-name"></h2>
+    </div>
+    <hr>
+    <div class="description">
+      <h1>The product description </h1>
+      <p id="product-description"></p>
+      <p>This elegant and ultra-soft sofa blends comfort with luxury. 
+  Designed to elevate your living space, it offers deep seating, premium 
+  fabric, and durable support — perfect for both lounging and entertaining.</p>
+       </div>
+       <hr>
+      <div class="price">
+        <h1>The product price</h1>
+       <h3 id="product-price"></h3>
+       </div>
+       <hr>
+       <div class="quantity">
+  <h1>The product quantity</h1>
+  <label for="quantity">Quantity: </label>
+  <input type="number" id="quantity" min="1" value="1">
+</div>
+
+       <br><br><br>
+       <hr>
+       <br><br>
+
+    <button id="addToCart">Add to bag</button>
+    </div>
+  </div>
+  <script src="details.js"></script>
+</body>
+</html>

@@ -1,0 +1,904 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+  margin: 10px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 95%;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, opacity 0.3s;
+    
+}
+.nav-links:hover a{
+    opacity: 0.5;
+}
+.nav-links a:hover{
+    opacity: 1; 
+  color: black;
+}
+.nav-links li {
+    list-style: none;
+}
+nav .logo{
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 40px;
+}
+
+.loginBtn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.loginBtn:hover {
+    background-color: black;
+    color: white;
+}
+.btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+.btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+.loginBtn:hover .btn-text{
+    transform: translateY(-100%);
+}
+.firstContainer {
+  display: flex;
+  align-items: flex-end;  
+  justify-content: space-between;
+  gap: 30px; 
+  padding: 120px 60px;            
+}
+
+.leftSide, .rightSide {
+  flex: 1;              
+}
+
+.leftSide img {
+  width: 100%;          
+  border-radius: 10px;
+  display: block;
+ transition: transform 0.3s ease;
+}
+.leftSide img:hover{
+    transform: scale(1.02);
+}
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+}
+.rightSide img{
+    border-radius: 10px;
+    width: auto;
+    height: 600px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.rightSide img:hover {
+    transform: scale(1.02);
+}
+.textPart {
+    line-height: 2;
+}
+.textPart h1 {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 100px;
+}
+.textPart p{
+    width: 800px;
+     font-family: "Instrument Serif", serif;
+    font-size: 40px;
+    font-style: italic;
+}
+.section2 {
+  position: relative;
+  z-index: 1;
+  height: 150vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.text2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.text2 h1 {
+    font-family: "Instrument Serif", serif;
+    font-size: 100px;
+}
+.text2 p{
+    width: 700px;
+      font-family: "Quicksand", sans-serif;
+     font-size: 30px;
+}
+.firstimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.secondimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.firstimg button {
+    display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  color: white;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.firstimg button:hover {
+    color: black;
+    background-color: white;
+}
+.secondimg button {
+    display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  color: white;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.secondimg button:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.firstimg img {
+    height: 700px;
+    border-radius: 10px;
+    padding: 50px;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+.secondimg img {
+    height: 400px;
+    border-radius: 10px;
+    padding: 50px;
+   transition: transform 0.5s ease, filter 0.3s ease;
+}
+.firstimg img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.6);
+}
+.secondimg img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.6);
+}
+
+.image2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container3 .title h1{
+    padding: 50px;
+    width: 1500px;
+    font-size: 130px;
+    font-family: "BBH Sans Bogle", sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+.section3{
+    height: auto;
+}
+.section3 .descrip p{
+    font-size: 50px;
+    padding: 50px;
+    color: black;
+    width: 700px;
+    font-family: "Instrument Serif", serif;
+    transition: color 0.3s ease;
+}
+.section3 button{
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.section3 button:hover{
+    background-color: black;
+    color: white;
+}
+.section3 .btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+.section3 .btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+.section3 button:hover .btn-text{
+    transform: 
+    translateY(-100%);
+}
+.desAndImg {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desAndImg p{
+    align-items: flex-start;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+}
+.desAndImg img{
+    width: 1000px;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    border-radius: 20px;
+}
+.desAndImg img:hover{
+    transform: scale(1.05);
+  filter: brightness(0.6);
+}
+.section4 {
+    background-color: white;
+    color: black;
+    height: auto;
+}
+.section4 .introduction{
+    text-align: center;
+    padding: 200px 100px;
+    font-size: 80px;
+     font-family: "BBH Sans Bogle", sans-serif;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 10px;
+}
+.products img{
+    height: auto;
+    width: 500px;
+}
+.card {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.card img:hover {
+    transform: scale(1.05);
+}
+.sofaText {
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+}
+.sofa {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.section4 button{
+  display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  align-self: center;
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.section4 button:hover{
+    background-color: black;
+    color: white;
+}
+.section4 .btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+.section4 .btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+.section4 button:hover .btn-text{
+    transform: 
+    translateY(-100%);
+}
+.section5 {
+    height: 150vh;
+    background-color: white;
+    color: black;
+    
+}
+.section5 .img img{
+    height: 100vh;
+    border-radius: 10px;
+}
+.container5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.container5 .description h1{
+    width: 400px;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+}
+.container5 .description img{
+    width: 500px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+.container5 .description img:hover{
+    transform: scale(1.05);
+  filter: brightness(0.6);
+}
+.container5 .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.container5 .description button {
+    display: inline-block;
+  overflow: hidden;
+  width: 200px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  background-color: transparent;
+  font-family: "Instrument Serif", serif;
+  font-size: 25px;
+  color: black;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.container5 .description button:hover {
+    color: white;
+    background-color: black;
+}
+.section6 {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+.container6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 70px;
+    overflow: hidden;
+}
+.container6 .leftPart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.container6 .leftPart p{
+    width: 600px;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+}
+.container6 .leftPart h1{
+    width: 500px;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 90px;
+}
+
+.container6 .rightPart img{
+    height: 60vh;
+    border-radius: 10px;
+}
+.section7{
+    height: auto;
+    background-color: white;
+    color: black;
+}
+.section7 .container7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 70px;
+}
+.section7 .rightSide7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+} 
+.section7 .rightSide7 p{
+    width: 600px;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+}
+.section7 .rightSide7 h1{
+    width: 700px;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 90px;
+}
+.section7 .rightSide7 img{
+    width: 700px;
+    border-radius: 10px;
+}
+.section7 .leftSide7 img{
+    height: 50vh;
+    border-radius: 10px;
+}
+
+footer {
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.footerContainer {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    height: 70%;
+    box-shadow: 8px 8px 10px 10px white;
+    background-color: white;
+    border-radius: 10px;
+}
+.above {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .left li{
+    list-style: none;
+    
+}
+footer .left a{
+    text-decoration: none;
+    color: black;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+    line-height: 1.5;
+    transition: color 0.3s, opacity 0.3s;
+}
+footer .left:hover a{
+    opacity: 0.5;
+}
+footer .left a:hover{
+    opacity: 1; 
+  color: black;
+}
+
+footer .right li{
+    list-style: none;
+    
+}
+footer .right a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-family: "Instrument Serif", serif;
+   font-size: 40px;
+    transition: color 0.3s, opacity 0.3s;
+}
+footer .right:hover a{
+    opacity: 0.5;
+}
+footer .right a:hover{
+    opacity: 1; 
+  color: black;
+}
+
+footer .center li{
+    list-style: none;
+    
+}
+footer .center a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+    transition: color 0.3s, opacity 0.3s;
+}
+footer .center:hover a{
+    opacity: 0.5;
+}
+footer .center a:hover{
+    opacity: 1; 
+  color: black;
+}
+
+footer h1{
+    font-family: "Instrument Serif", serif;
+    font-size: 70px;
+}
+.beyond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.beyond .rightBeyond p{
+    font-family: "Instrument Serif", serif;
+    font-size: 30px;
+}
+.beyond .leftBeyond p{
+    font-size: 50px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 20px;
+        font-size: 20px;
+    }
+    nav .logo {
+        font-size: 30px;
+    }
+    .loginBtn {
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+
+    .firstContainer {
+        padding: 100px 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftSide, .rightSide {
+        width: 100%;
+        max-width: 800px;
+    }
+    .textPart p {
+        width: 100%;
+        font-size: 30px;
+    }
+    .rightSide img {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .textPart h1 {
+        font-size: 80px;
+    }
+
+    .text2 {
+        padding: 50px 30px;
+        flex-direction: column;
+    }
+    .text2 h1 {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    .text2 p {
+        width: 100%;
+        font-size: 24px;
+    }
+    .image2 {
+        flex-direction: column;
+    }
+    .firstimg img, .secondimg img {
+        padding: 20px;
+        height: auto;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .container3 .title h1 {
+        width: 100%;
+        padding: 30px;
+        font-size: 70px;
+        line-height: 1.2;
+    }
+    .section3 .descrip p {
+        width: 100%;
+        padding: 30px;
+        font-size: 30px;
+    }
+    .desAndImg {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .desAndImg p {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .desAndImg img {
+        width: 100%;
+    }
+
+    .section4 .introduction h1 {
+        font-size: 60px;
+    }
+    .products {
+        flex-wrap: wrap;
+        padding: 50px 30px;
+    }
+    .card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .products img {
+        width: 100%;
+    }
+
+    .section5 {
+        height: auto;
+        padding: 50px 0;
+    }
+    .container5 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section5 .img img, .container5 .description img {
+        width: 100%;
+        height: auto;
+    }
+    .container5 .description {
+        padding: 30px;
+    }
+    .container5 .description h1 {
+        width: 100%;
+    }
+
+    .container6, .container7 {
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 30px;
+    }
+    .container6 .leftPart h1, .section7 .rightSide7 h1 {
+        width: 100%;
+        font-size: 70px;
+    }
+    .container6 .leftPart p, .section7 .rightSide7 p {
+        width: 100%;
+        font-size: 30px;
+    }
+    .container6 .rightPart img, .section7 .rightSide7 img, .section7 .leftSide7 img {
+        width: 100%;
+        height: auto;
+    }
+    .container6 .rightPart {
+        order: -1;
+    }
+
+    .footerContainer {
+        width: 95%;
+    }
+    .above {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .beyond {
+        flex-direction: column;
+        text-align: center;
+    }
+    .beyond .rightBeyond p {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+        padding: 15px 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    .nav-links li {
+        padding: 5px 0;
+    }
+    .loginBtn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .textPart h1 {
+        font-size: 50px;
+    }
+    .textPart p {
+        font-size: 20px;
+    }
+
+    .text2 h1 {
+        font-size: 50px;
+    }
+    .text2 p {
+        font-size: 18px;
+    }
+    .firstimg img, .secondimg img {
+        width: 100%;
+    }
+    .firstimg button, .secondimg button {
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .container3 .title h1 {
+        font-size: 40px;
+    }
+    .section3 .descrip p {
+        font-size: 20px;
+    }
+    .desAndImg p {
+        font-size: 25px;
+    }
+    .section3 button {
+        width: 150px;
+        font-size: 20px;
+    }
+    .btn {
+        padding-left: 30px !important;
+    }
+
+    .section4 .introduction h1 {
+        font-size: 30px;
+        padding: 100px 30px;
+    }
+    .card {
+        width: 100%;
+    }
+    .sofaText h2 {
+        font-size: 20px;
+    }
+    .sofaText p {
+        font-size: 18px;
+    }
+    .sofa {
+        font-size: 16px;
+    }
+
+    .container5 .description h1 {
+        font-size: 24px;
+    }
+
+    .container6 .leftPart h1, .section7 .rightSide7 h1 {
+        font-size: 40px;
+    }
+    .container6 .leftPart p, .section7 .rightSide7 p {
+        font-size: 20px;
+    }
+
+    footer {
+        height: auto;
+    }
+    .footerContainer {
+        box-shadow: none;
+        padding: 30px 10px;
+    }
+    footer h1 {
+        font-size: 40px;
+    }
+    footer a {
+        font-size: 20px !important;
+    }
+    .beyond .leftBeyond p {
+        font-size: 30px;
+    }
+    .beyond .rightBeyond p {
+        font-size: 16px;
+    }
+}

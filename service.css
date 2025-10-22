@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header nav {
+  margin: 10px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 95%;
+  position: static;
+    transform: none;
+    margin: 10px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ header .nav-links {
+    display: flex;
+    gap: 50px;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+header .nav-links a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, opacity 0.3s;
+    
+}
+header .nav-links:hover a{
+    opacity: 0.5;
+}
+header .nav-links a:hover{
+    opacity: 1; 
+  color: black;
+}
+header .nav-links li {
+    list-style: none;
+}
+header nav .logo{
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 40px;
+}
+header .loginBtn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+header .loginBtn:hover {
+    background-color: black;
+    color: white;
+}
+header .btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+header .btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+header .loginBtn:hover .btn-text{
+    transform: translateY(-100%);
+}
+.section1 {
+    text-align: center;
+    padding: 50px;
+    height: auto;
+    padding: 100px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+.section1 h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section1 p {
+    font-size: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Instrument Serif", serif;
+}
+.section2 .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.section2 .container img{
+    height: 750px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section2 .container .content{
+    max-width: 600px;
+}
+.section2 .container .content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section2 .container .content p{
+    font-size: 25px;
+    line-height: 1.6;
+    font-family: "Comfortaa", sans-serif;
+}
+.section2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3 .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.section3 .container img{
+    height: 750px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section3 .container .content{
+    max-width: 600px;
+}
+.section3 .container .content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section3 .container .content p{
+    font-size: 25px;
+    line-height: 1.6;
+    font-family: "Comfortaa", sans-serif;
+}
+.section4{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.section4 .container img{
+    height: 750px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section4 .container .content{
+    max-width: 600px;
+}
+.section4 .container .content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section4 .container .content p{
+    font-size: 25px;
+    line-height: 1.6;
+    font-family: "Comfortaa", sans-serif;
+}
+.section5{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section5 .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.section5 .container img{
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section5 .container .content{
+    max-width: 600px;
+}
+.section5 .container .content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section5 .container .content p{
+    font-size: 25px;
+    line-height: 1.6;
+    font-family: "Comfortaa", sans-serif;
+}
+.section6{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section6 .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.section6 .container img{
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section6 .container .content{
+    max-width: 600px;
+}
+.section6 .container .content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section6 .container .content p{
+    font-size: 25px;
+    line-height: 1.6;
+    font-family: "Comfortaa", sans-serif;
+}
+
+footer {
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.footerContainer {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    height: 70%;
+    box-shadow: 8px 8px 10px 10px white;
+    background-color: white;
+    border-radius: 10px;
+}
+.above {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .left li{
+    list-style: none;
+    
+}
+footer .left a{
+    text-decoration: none;
+    color: black;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+    line-height: 1.5;
+    transition: color 0.3s, opacity 0.3s;
+}
+footer .left:hover a{
+    opacity: 0.5;
+}
+footer .left a:hover{
+    opacity: 1; 
+  color: black;
+}
+
+footer .right li{
+    list-style: none;
+    
+}
+footer .right a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-family: "Instrument Serif", serif;
+   font-size: 40px;
+    transition: color 0.3s, opacity 0.3s;
+}
+footer .right:hover a{
+    opacity: 0.5;
+}
+footer .right a:hover{
+    opacity: 1; 
+  color: black;
+}
+
+footer .center li{
+    list-style: none;
+    
+}
+footer .center a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+    transition: color 0.3s, opacity 0.3s;
+}
+footer .center:hover a{
+    opacity: 0.5;
+}
+footer .center a:hover{
+    opacity: 1; 
+  color: black;
+}
+
+footer h1{
+    font-family: "Instrument Serif", serif;
+    font-size: 70px;
+}
+.beyond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.beyond .rightBeyond p{
+    font-family: "Instrument Serif", serif;
+    font-size: 30px;
+}
+.beyond .leftBeyond p{
+    font-size: 50px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+
+@media (max-width: 1024px) {
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 15px 10px;
+    }
+    header .nav-links {
+        gap: 20px;
+        font-size: 20px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    header nav .logo {
+        font-size: 30px;
+    }
+    header .loginBtn {
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+
+    .section1 {
+        padding: 80px 30px;
+    }
+    .section1 h1 {
+        font-size: 60px;
+    }
+    .section1 p {
+        font-size: 24px;
+        max-width: 90%;
+    }
+
+    .section2, .section3, .section4, .section5, .section6 {
+        height: auto;
+        padding: 50px 20px;
+    }
+    .section2 .container, .section3 .container, .section4 .container, .section5 .container, .section6 .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section3 .container, .section5 .container {
+        flex-direction: column-reverse;
+    }
+
+    .section2 .container .content, .section3 .container .content, .section4 .container .content, .section5 .container .content, .section6 .container .content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .section2 .container .content h1, .section3 .container .content h1, .section4 .container .content h1, .section5 .container .content h1, .section6 .container .content h1 {
+        font-size: 35px;
+    }
+    .section2 .container .content p, .section3 .container .content p, .section4 .container .content p, .section5 .container .content p, .section6 .container .content p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    .section2 .container img, .section3 .container img, .section4 .container img, .section5 .container img, .section6 .container img {
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    footer {
+        height: auto;
+        padding: 50px 0;
+    }
+    .footerContainer {
+        width: 95%;
+        padding: 30px;
+    }
+    .above {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    footer h1 {
+        font-size: 50px;
+    }
+    footer a {
+        font-size: 30px !important;
+    }
+    .beyond {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    .beyond .rightBeyond p {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header .loginBtn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .section1 h1 {
+        font-size: 40px;
+    }
+    .section1 p {
+        font-size: 18px;
+    }
+
+    .section2 .container .content h1, .section3 .container .content h1, .section4 .container .content h1, .section5 .container .content h1, .section6 .container .content h1 {
+        font-size: 28px;
+    }
+    .section2 .container .content p, .section3 .container .content p, .section4 .container .content p, .section5 .container .content p, .section6 .container .content p {
+        font-size: 16px;
+    }
+    .section2 .container img, .section3 .container img, .section4 .container img, .section5 .container img, .section6 .container img {
+        box-shadow: none;
+        border-radius: 5px;
+    }
+
+    .footerContainer {
+        box-shadow: none;
+        padding: 20px;
+    }
+    footer h1 {
+        font-size: 35px;
+    }
+    footer a {
+        font-size: 20px !important;
+    }
+    .beyond .leftBeyond p {
+        font-size: 30px;
+    }
+    .beyond .rightBeyond p {
+        font-size: 14px;
+    }
+}

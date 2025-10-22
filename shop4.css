@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    width: 95%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 40px;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 50px;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+header .nav-links li {
+    list-style: none;
+}
+
+header .nav-links:hover a {
+    opacity: 0.5;
+}
+
+header .nav-links a:hover {
+    opacity: 1;
+    color: black;
+}
+
+header .loginBtn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+header .loginBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+header .btn-text {
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+
+header .btn-text::before {
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+    transition: transform 0.3s ease;
+}
+
+header .loginBtn:hover .btn-text {
+    transform: translateY(-100%);
+}
+
+.Sidenavbar {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    z-index: 100;
+    background-color: white;
+    border-right: 1px solid #eee;
+}
+
+.Sidenavbar .logo {
+    font-size: 30px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+
+.Sidenavbar nav {
+    padding: 20px;
+    width: 100%;
+}
+
+.Sidenavbar ul {
+    list-style: none;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.Sidenavbar ul li {
+    padding: 15px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: "Instrument Serif", serif;
+}
+
+.Sidenavbar ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    display: block;
+}
+
+.Sidenavbar ul li:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Sidenavbar ul li:hover a {
+    color: white;
+}
+
+.Sidenavbar .bigBtn {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.Sidenavbar .bigBtn li {
+    color: white;
+}
+
+.Sidenavbar .description {
+    font-family: "Instrument Serif", serif;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.container {
+    margin-left: 20%;
+    margin-top: 130px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.container .box {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .image {
+    height: auto;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+.box .text {
+    margin-top: 20px;
+    line-height: 1.5;
+    padding: 0 20px 20px 20px;
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+}
+
+.buy p {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.box button {
+    padding: 15px 20px;
+    border: 1px solid rgb(116, 116, 116);
+        font-size: 22px;
+    font-family: "Instrument Serif", serif;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.box button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    header .nav-links {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .Sidenavbar {
+        width: 25%;
+    }
+
+    .container {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 98%;
+        padding: 10px 0;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .Sidenavbar {
+        width: 30%;
+    }
+
+    .container {
+        margin-left: 30%;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .Sidenavbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        display: block;
+        text-align: center;
+    }
+
+    .Sidenavbar nav {
+        padding: 10px;
+    }
+
+    .Sidenavbar .description {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .Sidenavbar ul {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .Sidenavbar ul a {
+        flex-grow: 1;
+    }
+
+    .Sidenavbar ul li {
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        font-size: 18px;
+    }
+
+    .container {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header .nav-links {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    header .loginBtn {
+        font-size: 16px;
+        padding: 5px 12px;
+    }
+
+    .box h2 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .buy p {
+        font-size: 18px;
+    }
+
+    .box button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

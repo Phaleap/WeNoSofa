@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header nav {
+  margin: 10px;  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 95%;
+  position: static;
+    transform: none;
+    margin: 10px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ header .nav-links {
+    display: flex;
+    gap: 50px;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+header .nav-links a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, opacity 0.3s;
+    
+}
+header .nav-links:hover a{
+    opacity: 0.5;
+}
+header .nav-links a:hover{
+    opacity: 1; 
+  color: black;
+}
+header .nav-links li {
+    list-style: none;
+}
+header nav .logo{
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-size: 40px;
+}
+header .loginBtn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: transparent;
+    font-family: "Instrument Serif", serif;
+    font-size: 25px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+header .loginBtn:hover {
+    background-color: black;
+    color: white;
+}
+header .btn-text{
+    position: relative;
+    display: inline-block;
+    padding: 0.4rem 0;
+    transition: transform 0.3s ease;
+}
+header .btn-text::before{
+    content: attr(before);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.4rem;
+  transition: transform 0.3s ease;
+}
+header .loginBtn:hover .btn-text{
+    transform: translateY(-100%);
+}
+.section1 {
+    text-align: center;
+    padding: 50px;
+    height: auto;
+    padding: 100px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+.section1 h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+.section1 p {
+    font-size: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Instrument Serif", serif;
+}
+.section2 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+
+}
+.section2 .client1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section2 .image h1 {
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.section2 .client1 img{
+    height: 500px;
+    border-radius: 10px;
+}
+.section2 .text {
+    width: 400px;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+}
+.section3 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 600px;
+
+}
+.section3 .client2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section3 .image h1 {
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.section3 .client2 img{
+    height: 500px;
+    border-radius: 10px;
+}
+.section3 .text {
+    width: 400px;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+}
+.section4 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 900px;
+
+}
+.section4 .client3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section4 .image h1 {
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.section4 .client3 img{
+    height: 500px;
+    border-radius: 10px;
+}
+.section4 .text {
+    width: 400px;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+}
+.section5 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 900px;
+
+}
+.section5 .client4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section5 .image h1 {
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.section5 .client4 img{
+    height: 500px;
+    border-radius: 10px;
+}
+.section5 .text {
+    width: 400px;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+}
+.section6 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 600px;
+
+}
+.section6 .client5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section6 .image h1 {
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.section6 .client5 img{
+    height: 500px;
+    border-radius: 10px;
+}
+.section6 .text {
+    width: 400px;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+}
+.section7 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+
+}
+.section7 .client6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section7 .image h1 {
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.section7 .client6 img{
+    height: 500px;
+    border-radius: 10px;
+}
+.section7 .text {
+    width: 400px;
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+}
+
+@media (max-width: 1024px) {
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+        padding: 15px 10px;
+    }
+    header .nav-links {
+        gap: 20px;
+        font-size: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav .logo {
+        font-size: 30px;
+    }
+    header .loginBtn {
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+
+    .section1 {
+        padding: 80px 30px;
+    }
+    .section1 h1 {
+        font-size: 60px;
+    }
+    .section1 p {
+        font-size: 24px;
+        max-width: 90%;
+    }
+
+    .section2, .section3, .section4, .section5, .section6, .section7 {
+        height: auto;
+        padding: 50px 20px;
+        justify-content: center;
+    }
+    
+    .section3, .section4, .section5, .section6 {
+        padding: 50px 20px;
+    }
+
+    .section2 .client1, .section3 .client2, .section4 .client3, .section5 .client4, .section6 .client5, .section7 .client6 {
+        flex-direction: column;
+        gap: 15px;
+        max-width: 450px;
+    }
+
+    .section2 .client1 img, .section3 .client2 img, .section4 .client3 img, .section5 .client4 img, .section6 .client5 img, .section7 .client6 img {
+        height: 300px;
+    }
+    
+    .section2 .image h1, .section3 .image h1, .section4 .image h1, .section5 .image h1, .section6 .image h1, .section7 .image h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .section2 .text, .section3 .text, .section4 .text, .section5 .text, .section6 .text, .section7 .text {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header .loginBtn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .section1 h1 {
+        font-size: 40px;
+    }
+    .section1 p {
+        font-size: 18px;
+    }
+
+    .section2, .section3, .section4, .section5, .section6, .section7 {
+        padding: 30px 10px;
+    }
+
+    .section2 .client1 img, .section3 .client2 img, .section4 .client3 img, .section5 .client4 img, .section6 .client5 img, .section7 .client6 img {
+        height: 200px;
+    }
+
+    .section2 .image h1, .section3 .image h1, .section4 .image h1, .section5 .image h1, .section6 .image h1, .section7 .image h1 {
+        font-size: 20px;
+    }
+
+    .section2 .text, .section3 .text, .section4 .text, .section5 .text, .section6 .text, .section7 .text {
+        font-size: 20px;
+    }
+}
