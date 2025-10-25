@@ -232,6 +232,7 @@ header .loginBtn:hover .btn-text {
 .box button {
     border-radius: 10px;
     padding: 15px 20px;
+    background-color: transparent;
     border: 1px solid rgb(116, 116, 116);
     font-size: 22px;
     font-family: "Instrument Serif", serif;
